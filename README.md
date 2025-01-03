@@ -1,50 +1,59 @@
-# Welcome to your Expo app 👋
+# Smart Contact Manager
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Smart Contact Manager is an AI-powered contact management app that helps you organize, tag, and search through your phone contacts with ease. It uses OpenAI's GPT model to extract meaningful tags from your contacts based on their names, job titles, and affiliations.
 
-## Get started
+---
 
-1. Install dependencies
+## **Features**
 
+- **AI Tag Extraction**: Automatically generate tags for contacts using AI.
+- **Tag-Based Search**: Search contacts by industries, professions, or communities using generated tags.
+- **Local Storage**: Save contacts and tags in a local SQLite database for fast and secure access.
+- **Auto-Update**: Detect and update edited or newly added contacts.
+- **User-Friendly Interface**: Intuitive design with React Native and Expo.
+
+---
+
+## **Tech Stack**
+
+- **Frontend**: React Native with Expo
+- **Backend**: SQLite for local data management
+- **AI Integration**: OpenAI (DeepSeek API) for intelligent tag extraction
+- **Languages**: TypeScript and JavaScript
+
+---
+
+## **Installation**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AbdullahAlmanei/rightCall.git
+   cd rightCall
+   ```
+2. Install dependencies:
    ```bash
    npm install
    ```
-
-2. Start the app
-
+3. Start the development server:
    ```bash
-    npx expo start
+   expo start
    ```
+4. Scan the QR code with the Expo Go app on your phone to test the app.
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## **Usage**
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+1. Launch the app and grant permission to access your contacts.
+2. The app will scan your phone contacts and use AI to generate relevant tags.
+3. Use the search feature to find contacts by name, job title, company, or tags.
+4. Add or edit tags manually for finer control over your contacts.
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## **Future Improvements**
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Implement degrees of separation for contacts.
+- Add cloud synchronization to backup and restore contacts.
+- Enable bulk tag editing for multiple contacts.
+- Enhance AI prompt handling for better tag standardization.
+---
